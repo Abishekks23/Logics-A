@@ -3,65 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logics A - About Us</title>
-    <meta name="description" content="About Logics A - Tuition Center and Service Provider">
+    <title>About Us - Logics'A</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=IM+Fell+English:ital@0;1&family=Pirata+One&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .page-content-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 50px;
+            border-radius: 12px;
+            border: 1px solid rgba(97, 122, 67, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 40px 0;
+            backdrop-filter: blur(5px);
+        }
+        .page-content-box p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
 <body>
-    <div class="page-container">
-        <div class="ornate-frame">
-            <!-- Header Image Area -->
-            <div class="header-art">
-                <img src="swan_header.png" alt="Art Nouveau Swans" class="header-image" id="swan-img">
-            </div>
-
-            <!-- Navigation -->
-            <nav class="vintage-nav">
-                <a href="index.html">HOME</a> &loz;
-                <a href="about.html">ABOUT</a> &loz;
-                <a href="services.html">SERVICES</a> &loz;
-                <a href="upskill.html">UPSKILL</a> &loz;
-                <a href="index.html#contact">CONTACT</a>
-            </nav>
-
-            <!-- Main Content -->
-            <main class="content-area">
-                <div class="title-section">
-                    <span class="decorative-flourish left">✿</span>
-                    <h1>About Us</h1>
-                    <span class="decorative-flourish right">✿</span>
-                </div>
-
-                <div class="intro-text">
-                    <p class="drop-cap">L</p>
-                    <p>ogics’A is a professional platform dedicated to Finance, Accounts, Audit, Taxation, Education, Career Guidance, and Business Consultancy. We provide end-to-end support for individuals, students, freelancers, entrepreneurs, and businesses.</p>
-                    <br>
-                    <p>Our services include GST, IT filing, TDS, accounting, audit, and other compliance-related services, along with specialized coaching for 11th & 12th Accountancy (State & CBSE), CA, CS, and CMA professional students. We also guide aspiring professionals through practical training and article-ship opportunities.</p>
-                    <br>
-                    <p>For students who have completed their 12th standard, Logics’A provides career counselling, job guidance, skill development, and training in Accounts, Finance, and Audit, helping them choose the right career path and become industry-ready.</p>
-                    <br>
-                    <p>We also support freelancers and new business owners by helping them build practical knowledge and skills in accounting, finance, audit, business systems, and financial management—enabling them to confidently manage and grow their own businesses.</p>
-                </div>
-
-                <div class="details-section" style="flex-direction: column; align-items: center; gap: 20px;">
-                    <div class="book-box pink-box" style="text-align: center; max-width: 80%;">
-                        <h3 class="badge badge-pink" style="margin-bottom: 10px;">Our Vision</h3>
-                        <p style="font-size: 1.1rem; line-height: 1.6;">To be the most trusted educational sanctuary and consultancy hub, guiding minds toward professional success and financial clarity.</p>
-                        <br>
-                        <p style="font-size: 1.2rem; font-family: 'Cinzel', serif; font-weight: bold; color: #a36573;">From Students to Professionals.<br>From Ideas to Businesses.</p>
-                    </div>
-                </div>
-
-                <!-- Footer Art Area -->
-                <div class="footer-art">
-                    <img src="floral_footer.png" alt="Floral Motif" class="footer-image" id="floral-img">
-                </div>
-            </main>
+    <header class="navbar">
+        <div class="logo-area">
+            <div class="logo-circle"><span class="logo-initial">L</span></div>
+            <div class="logo-text"><h1>LOGICS'A</h1><p>Learn &bull; Grow &bull; Succeed</p></div>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="#">Courses</a>
+            <a href="services.html">Services</a>
+            <a href="upskill.html">Upskill</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <a href="#enquire" class="btn btn-primary">Enquire Now</a>
+    </header>
+
+    <section class="hero" style="background-image: url('hero_bg.png'); min-height: calc(100vh - 90px); padding-top: 40px; align-items: flex-start;">
+        <div class="hero-content" style="max-width: 100%;">
+            <h1 class="hero-title">About <span>Us</span></h1>
+            <p class="subtitle" style="margin-bottom: 10px;"><span class="icon">✿</span> From Students to Professionals. From Ideas to Businesses.</p>
+            
+            <div class="page-content-box">
+                <p><strong>Logics’A</strong> is a professional platform dedicated to Finance, Accounts, Audit, Taxation, Education, Career Guidance, and Business Consultancy. We provide end-to-end support for individuals, students, freelancers, entrepreneurs, and businesses.</p>
+                <p>Our services include GST, IT filing, TDS, accounting, audit, and other compliance-related services, along with specialized coaching for 11th & 12th Accountancy (State & CBSE), CA, CS, and CMA professional students. We also guide aspiring professionals through practical training and article-ship opportunities.</p>
+                <p>For students who have completed their 12th standard, Logics’A provides career counselling, job guidance, skill development, and training in Accounts, Finance, and Audit, helping them choose the right career path and become industry-ready.</p>
+                <p>We also support freelancers and new business owners by helping them build practical knowledge and skills in accounting, finance, audit, business systems, and financial management—enabling them to confidently manage and grow their own businesses.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

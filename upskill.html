@@ -3,76 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logics A - Upskill & Training</title>
-    <meta name="description" content="Upskill with Logics A - Practical Training & Skill Development">
+    <title>Upskill - Logics'A</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=IM+Fell+English:ital@0;1&family=Pirata+One&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .page-content-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 50px;
+            border-radius: 12px;
+            border: 1px solid rgba(97, 122, 67, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 900px;
+            margin: 40px 0;
+            backdrop-filter: blur(5px);
+        }
+        .skills-grid {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .skill-card {
+            flex: 1;
+            padding: 30px;
+            border-radius: 12px;
+            background: #fafaf5;
+            border: 1px solid rgba(97, 122, 67, 0.2);
+        }
+        .skill-card h3 {
+            font-family: var(--font-serif);
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(97, 122, 67, 0.2);
+            padding-bottom: 10px;
+        }
+        .skill-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skill-card ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .skill-card ul li::before {
+            content: '✿';
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+        }
+    </style>
 </head>
 <body>
-    <div class="page-container">
-        <div class="ornate-frame">
-            <!-- Header Image Area -->
-            <div class="header-art">
-                <img src="swan_header.png" alt="Art Nouveau Swans" class="header-image" id="swan-img">
-            </div>
+    <header class="navbar">
+        <div class="logo-area">
+            <div class="logo-circle"><span class="logo-initial">L</span></div>
+            <div class="logo-text"><h1>LOGICS'A</h1><p>Learn &bull; Grow &bull; Succeed</p></div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Courses</a>
+            <a href="services.html">Services</a>
+            <a href="upskill.html" class="active">Upskill</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <a href="#enquire" class="btn btn-primary">Enquire Now</a>
+    </header>
 
-            <!-- Navigation -->
-            <nav class="vintage-nav">
-                <a href="index.html">HOME</a> &loz;
-                <a href="about.html">ABOUT</a> &loz;
-                <a href="services.html">SERVICES</a> &loz;
-                <a href="upskill.html">UPSKILL</a> &loz;
-                <a href="index.html#contact">CONTACT</a>
-            </nav>
-
-            <!-- Main Content -->
-            <main class="content-area">
-                <div class="title-section">
-                    <span class="decorative-flourish left">✿</span>
-                    <h1>Upskill</h1>
-                    <span class="decorative-flourish right">✿</span>
-                </div>
-
-                <div class="intro-text" style="text-align: center;">
-                    <h2 style="font-family: 'Cinzel', serif; color: #a36573; margin-bottom: 20px;">Master Practical Skills for the Real World</h2>
-                    <p>At <strong>Logics’A</strong>, we bridge the gap between theoretical knowledge and practical application. We believe that true professional excellence comes from hands-on experience and continuous learning.</p>
-                    <br>
-                    <p>Our tailored training programs are designed to equip students, freelancers, and entrepreneurs with the exact skills required to navigate the complexities of modern finance and business management.</p>
-                </div>
-
-                <div class="details-section" style="flex-direction: column; align-items: center; gap: 20px; border: none;">
-                    
-                    <div class="book-box green-box" style="width: 100%; max-width: 500px;">
-                        <h3 class="badge badge-green">For Students & Graduates</h3>
-                        <ul class="bullet-list" style="margin-top: 10px;">
+    <section class="hero" style="background-image: url('hero_bg.png'); min-height: calc(100vh - 90px); padding-top: 40px; align-items: flex-start;">
+        <div class="hero-content" style="max-width: 100%;">
+            <h1 class="hero-title">Upskill & <span>Training</span></h1>
+            <p class="subtitle" style="margin-bottom: 10px;"><span class="icon">✿</span> Master Practical Skills for the Real World</p>
+            
+            <div class="page-content-box">
+                <p style="font-size: 1.1rem; line-height: 1.8;">At <strong>Logics’A</strong>, we bridge the gap between theoretical knowledge and practical application. We believe that true professional excellence comes from hands-on experience and continuous learning. Our tailored training programs are designed to equip students, freelancers, and entrepreneurs with the exact skills required to navigate the complexities of modern finance and business management.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>For Students & Graduates</h3>
+                        <ul>
                             <li>Career Counselling & Job Guidance</li>
                             <li>Skill Development in Accounts, Finance & Audit</li>
                             <li>Interview Preparation & Industry Readiness</li>
                             <li>Practical Training & Article-ship Opportunities</li>
                         </ul>
                     </div>
-
-                    <div class="book-box blue-box" style="width: 100%; max-width: 500px; background-color: #f0f4f8; border-color: #aebfd4;">
-                        <h3 class="badge badge-blue">For Freelancers & Startups</h3>
-                        <ul class="bullet-list" style="margin-top: 10px;">
+                    <div class="skill-card">
+                        <h3>For Freelancers & Startups</h3>
+                        <ul>
                             <li>Building Business Systems</li>
                             <li>Practical Financial Management</li>
                             <li>Managing Accounting & Audit Independently</li>
                             <li>Confidence in Tax Compliance & GST</li>
                         </ul>
                     </div>
-
                 </div>
-
-                <!-- Footer Art Area -->
-                <div class="footer-art">
-                    <img src="floral_footer.png" alt="Floral Motif" class="footer-image" id="floral-img">
-                </div>
-            </main>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
 </body>
 </html>
